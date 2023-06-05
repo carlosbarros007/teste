@@ -5,7 +5,7 @@
 
 .nav__bar{
 
-    position: relative;
+    
     width: 100%;
     /* definir um padding para menu caso a logo seja alterada  */
     display: flex;

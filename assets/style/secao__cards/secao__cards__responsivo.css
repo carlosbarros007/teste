@@ -1,17 +1,17 @@
-@media screen and (max-width: 900px) {
+ @media screen and (max-width: 768px) {
    
 
-    .secao__card__conteudo{
-
-        justify-content: flex-start;
-        gap: 20px;
-        
-    }
+  .secao__card__conteudo{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+  }
     
-    .secao__card__conteudo__card {
-      width: 40%;
-      
-    }
+    
   }
 
 
@@ -23,13 +23,15 @@
     }
 
    
-    .secao__card__conteudo__card {
-      width: 80%;
-    }
+   
 
     .secao__card__conteudo{
-
-        justify-content: center;
-        gap: 20px;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
     }
-  }
+  } 
