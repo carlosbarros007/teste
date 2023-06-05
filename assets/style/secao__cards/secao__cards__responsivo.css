@@ -1,0 +1,35 @@
+@media screen and (max-width: 900px) {
+   
+
+    .secao__card__conteudo{
+
+        justify-content: flex-start;
+        gap: 20px;
+        
+    }
+    
+    .secao__card__conteudo__card {
+      width: 40%;
+      
+    }
+  }
+
+
+  
+  @media screen and (max-width: 480px) {
+    .secao__card__titulo > h2 {
+       
+        font-size: 20px;
+    }
+
+   
+    .secao__card__conteudo__card {
+      width: 80%;
+    }
+
+    .secao__card__conteudo{
+
+        justify-content: center;
+        gap: 20px;
+    }
+  }

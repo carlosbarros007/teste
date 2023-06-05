@@ -20,6 +20,10 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 
 :root{
 
@@ -33,9 +37,6 @@
     --color__background : #185EA9;
 }
 
-.container{
 
-    font-family: var(--font__popins);
-}
 
 

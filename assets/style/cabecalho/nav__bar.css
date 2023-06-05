@@ -34,6 +34,8 @@
     text-transform: uppercase;
 
     color: var(--color__texto1);
+
+    text-decoration: none;
 }
 
 .nav__bar__lista__iten > a::after{

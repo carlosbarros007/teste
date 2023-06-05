@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="assets/style/cabecalho/nav__bar__responsivo.css">
     <link rel="stylesheet" href="assets/style/secao__baner__apresentacao/baner__apresentação.css">
     <link rel="stylesheet" href="assets/style/secao__baner__apresentacao/baner__apresentação__responsivo.css">
-    
-    <title>Clube de Cienciast</title>
+    <link rel="stylesheet" href="assets/style/secao__cards/secao__cards.css">
+    <link rel="stylesheet" href="assets/style/secao__cards/secao__cards__responsivo.css">
 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <title>Clube de Cienciast</title>
 </head>
 <body>
 
@@ -44,111 +48,159 @@
 
     </header>
 
-    <main class="container" >
-        <section class="baner__apresentação carousel">
-           
-            <div class="carousel-items">
-              <div id="slide1" class="carousel-item baner__apresentação__geral baner__apresentação--inicial">
-                <h2>
-                  Venha explorar <span>conosco</span>
-                </h2>
-                <p class="baner__apresentação__descrição">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolores iusto nobis corrupti atque corporis consequuntur accusamus earum
-                </p>
-                <div class="baner__apresentação__pseudo__botao">
-                  <p><a href="#">Saiba mais</a></p>
-                  <p><a href="#">Contato</a></p>
-                </div>
-            </div>
+    <main >
 
-            <div id="slide2" class="carousel-item baner__apresentação__geral baner__apresentação--laboratorio">
-                <h2>
-                  Ciência Incrível em <span>Ação!</span>
-                </h2>
-                <p class="baner__apresentação__descrição">
-                  Desvende os segredos do conhecimento nos nossos laboratórios de ponta, onde a ciência ganha vida e a curiosidade se transforma em descobertas extraordinárias.
-                </p>
-                <div class="baner__apresentação__pseudo__botao">
-                  <p><a href="#">Saiba mais</a></p>
-                  <p><a href="#">Contato</a></p>
-                </div>
-            </div>
+        <!-- seção apresentação -->
+        <section id="carouselExample" class="carousel slide carousel w-100" data-bs-ride="carousel">
+                <div class="carousel-inner w-100 d-flex  align-items-center">
 
-            <div id="slide3" class="carousel-item baner__apresentação__geral baner__apresentação--conquistas">
-                <h2>
-                  Descubra nossas <span>Conquistas</span>
-                </h2>
-                <p class="baner__apresentação__descrição">
-                  Inspire seu filho com nossas conquistas científicas! Explore um mundo de descobertas que estimulam a curiosidade e impulsionam o futuro. Junte-se a nós nessa jornada emocionante!
-                </p>
-                <div class="baner__apresentação__pseudo__botao">
-                  <p><a href="#">Saiba mais</a></p>
-                  <p><a href="#">Contato</a></p>
-                </div>
-              </div>
-            </div>
+                    <div class="carousel-item active baner__apresentação__geral baner__apresentação--inicial">
+                        <div class="baner__apresentação__conteudo">
 
-              
-          </section>
-          
-    
+                                <h2>
+                                    Venha explorar <span>conosco</span>
+                                </h2>
+
+                                <p class="baner__apresentação__descrição">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolores iusto nobis corrupti atque corporis consequuntur accusamus earum
+                                </p>
+
+                                <div class="baner__apresentação__pseudo__botao">
+                                    <p><a href="#">Saiba mais</a></p>
+                                    <p><a href="#">Contato</a></p>
+                                </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item baner__apresentação__geral baner__apresentação--laboratorio">
+                        <div class="baner__apresentação__conteudo">
+                                
+                                <h2>
+                                    Ciência Incrível  <span>em Ação!</span>
+                                </h2>
+
+                                <p class="baner__apresentação__descrição">
+                                    Desvende os segredos do conhecimento nos nossos laboratórios de ponta, onde a ciência ganha vida e a curiosidade se transforma em descobertas extraordinárias.
+                                </p>
+
+                                <div class="baner__apresentação__pseudo__botao">
+                                    <p><a href="#">Saiba mais</a></p>
+                                    <p><a href="#">Contato</a></p>
+                                </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item baner__apresentação__geral baner__apresentação--conquistas">
+                        <div class="baner__apresentação__conteudo">
+
+                                <h2>
+                                    Descubra nossas <span>Conquistas</span>
+                                </h2>
+
+                                <p class="baner__apresentação__descrição">
+                                    Inspire seu filho com nossas conquistas científicas! Explore um mundo de descobertas que estimulam a curiosidade e impulsionam o futuro. Junte-se a nós nessa jornada emocionante!
+                                </p>
+
+                                <div class="baner__apresentação__pseudo__botao">
+                                    <p><a href="#">Saiba mais</a></p>
+                                    <p><a href="#">Contato</a></p>
+                                </div>
+            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                </ol>
+        </section>
+
+        <!-- seeção cards -->
+        <section class="secao__cards" >
+
+            <header class="secao__card__titulo">
+
+                <h2>
+                    Descubra um mundo novo
+                </h2>
+
+            </header>
+
+            <main class="secao__card__conteudo">
+
+                <div class="secao__card__conteudo__card">
+
+                    <header>
+                       <img src="assets/imagens/astronaut.png" alt="">
+                    </header>
+
+                    <main>
+                        <h4>Exploração Científica</h4>
+
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum harum nesciunt 
+                            excepturi voluptatem dolorem voluptas numquam velit! Nobis impedit repudiandae 
+                            saepe magni reiciendis dolore, labore a excepturi quibusdam. Voluptates, soluta!
+                        </p>
+                    </main>
+
+                </div>
+
+                <div class="secao__card__conteudo__card">
+
+                    <header>
+                       <img src="assets/imagens/astronaut.png" alt="">
+                    </header>
+
+                    <main>
+                        <h4>Tecnologia e Inovação</h4>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum harum nesciunt 
+                            excepturi voluptatem dolorem voluptas numquam velit! Nobis impedit repudiandae 
+                            saepe magni reiciendis dolore, labore a excepturi quibusdam. Voluptates, soluta!
+                        </p>
+                    </main>
+
+                </div>
+
+                <div class="secao__card__conteudo__card">
+
+                    <header>
+                       <img src="assets/imagens/astronaut.png" alt="">
+                    </header>
+
+                    <main>
+                        <h4>Metodologia Diferenciada</h4>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum harum nesciunt 
+                            excepturi voluptatem dolorem voluptas numquam velit! Nobis impedit repudiandae 
+                            saepe magni reiciendis dolore, labore a excepturi quibusdam. Voluptates, soluta!
+                        </p>
+                    </main>
+
+                </div>
+
+
+
+               
+
+                
+
+            </main>
+
+
+        </section>
+
           
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-
-    // Obtém os elementos do carrossel
-    const slide1 = document.getElementById("slide1");
-    const slide2 = document.getElementById("slide2");
-    const slide3 = document.getElementById("slide3");
-
-    // Define o slide atual
-    let currentSlide = 1;
-
-    // Função para exibir o slide desejado e ocultar os outros slides
-    function showSlide(slideNumber) {
-    slide1.style.display = "none";
-    slide2.style.display = "none";
-    slide3.style.display = "none";
-
-    if (slideNumber === 1) {
-        slide1.style.display = "block";
-    } else if (slideNumber === 2) {
-        slide2.style.display = "block";
-    } else if (slideNumber === 3) {
-        slide3.style.display = "block";
-    }
-    }
-
-    // Função para avançar para o próximo slide
-    function nextSlide() {
-    currentSlide++;
-    if (currentSlide > 3) {
-        currentSlide = 1;
-    }
-    showSlide(currentSlide);
-    }
-
-    // Função para voltar para o slide anterior
-    function previousSlide() {
-    currentSlide--;
-    if (currentSlide < 1) {
-        currentSlide = 3;
-    }
-    showSlide(currentSlide);
-    }
-
-    // Exibe o primeiro slide inicialmente
-    showSlide(currentSlide);
-
-    // Event listeners para os botões de avançar e voltar
-    document.getElementById("btnNext").addEventListener("click", nextSlide);
-    document.getElementById("btnPrevious").addEventListener("click", previousSlide);
-
-
-    </script>
-    
     <script src="assets/script/responsivo__nav__bar.js" ></script>
 </body>
 </html>
