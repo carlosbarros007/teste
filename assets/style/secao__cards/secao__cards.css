@@ -1,7 +1,9 @@
-/* .secao__cards {
- 
-} */
-
+.secao__cards {
+ padding-top: 40px;
+}
+.background-gradiente{
+  background: linear-gradient(-360deg, #253646 0%, #185EA9 100% );
+}
 .secao__card__conteudo{
   width: 100vw;
   display: grid;
@@ -17,10 +19,13 @@
 
 .secao__card__titulo > h2 {
   text-align: center;
-  font-family: var(--font__lato);
+  font-family: 'Poppins';
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  padding-top: 50px;
+  color: white;
+  overflow: hidden;
+
 }
 
 .secao__card__conteudo__card {
@@ -31,6 +36,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.46);
+  background-color: white;
 }
 
 .secao__card__conteudo__card img {
@@ -38,12 +44,12 @@
   transition: transform 0.3s ease;
 }
 
-.secao__card__conteudo__card:hover main {
+.secao__card__conteudo__card:hover div {
   opacity: 1;
   transform: translateY(0);
 }
 
-.secao__card__conteudo__card main {
+.secao__card__conteudo__card div {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.9s ease, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease, transform 0.7s ease-in-out;
   transform: translateY(100%);
 }
 
@@ -80,3 +86,4 @@
     grid-template-columns: 1fr;
   }
 }
+

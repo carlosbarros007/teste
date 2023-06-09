@@ -20,6 +20,9 @@
 
 }
 
+main{
+    overflow-y: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -35,8 +38,25 @@ a{
 
     --color__texto1: #ffffff;
     --color__background : #185EA9;
+
+    --color__subtitulo: #D31D4E;
+    --color__titulo: #ffffff;
+    --color__sombra__imagem: #000000bf;
+
+}
+::-webkit-scrollbar {
+    width: 8px;
 }
 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
 
-
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
