@@ -1,50 +1,60 @@
-
 .secao__isntrutores{
-    position: relative;
-    width: 100%;
+
+  margin: 60px 0;
 }
 
-
 .secao__instrutores__conteudo {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .secao__instrutores__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  margin: 30px;
+}
+.secao__instrutores__titulo{
 
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 2em;
-    border-radius: 15px;
-  }
-  
-  .secao__instrutores__cards__imagem img {
-    width: 120px;
-    padding-bottom: 15px;
-    border-radius: 50%; /* Torna a imagem redonda */
-  }
-  
-  .secao__instrutores__cards__nome {
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden;
-    margin-bottom: 0.5em;
-  }
-  
-  .secao__instrutores__cards__descricao {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.secao__instrutores__cards {
+ 
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.secao__instrutores__cards.active {
+  display: flex;
+}
+
+.secao__instrutores__cards__imagem{
+  text-align: center; /* isso é uma adaptação tecnica planejada, funciona mas nnão e o ideal */
+}
+
+.secao__instrutores__cards__imagem img {
+  width: 60%;
+  padding-bottom: 15px;
+  border-radius: 50%;
+}
+
+.secao__instrutores__cards__nome {
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+.secao__instrutores__cards__descricao {
+  margin-bottom: 1em;
+  text-align: center;
+}
+ 
   .redes-sociais {
     display: flex;
     justify-content: center;
@@ -55,3 +65,32 @@
     font-size: 2em;
   }
   
+.secao__instrutores__botoes{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+  .botao-anterior,
+.botao-proximo {
+  background-color: #f4f4f4;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao-anterior {
+  margin-right: 10px;
+}
+
+.botao-proximo {
+  margin-left: 10px;
+}
+
+.botao-anterior:hover,
+.botao-proximo:hover {
+  background-color: #ddd;
+}
