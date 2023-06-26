@@ -1,64 +1,93 @@
-.secao__metodologia {
+.secao__metodologia{        
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-.secao__metodologia__conteudo {
-  color: white;
+.secao__metodologia__conteudo{
   width: 100vw;
   height: 70vh;
-  background-image: url("../../../imagens/06-lacem.jpg");
+  background-image: url("../../../imagens/metodologia\ 2.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+.secao__metodologia__conteudo--mascara{
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  padding-left: 60px;
+
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 60px;
-  overflow: hidden;
+  color: var(--color__texto);
 }
 
-.secao__metodologia__conteudo > h2 {
+.secao__metodologia__conteudo__titulo{
+
+  font-size: 45px;
+  font-weight: 800;
   text-transform: uppercase;
-  font-family: var(--font__lato);
-  font-weight: 700;
-  font-size: 35px;
+  margin-bottom: 20px;
+  color: var(--cor__titulo);
+
+}
+
+.secao__metodologia__conteudo__descrição{
+
+  max-width: 450px;
+  font-size: 17px;
+  font-weight: 600;
+
   margin-bottom: 20px;
 }
 
-.secao__metodologia__conteudo > p {
-  max-width: 600px;
-}
+.secao__metodologia__valores{ 
 
-.grid-container {
-  position: absolute; /* Alterado */
-  top: 62%; /* Alterado */
- 
-  padding: 0 50px;
+  position: absolute;
+  bottom: 40px;
   width: 100%;
+  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 80px;
+  padding: 0 40px;
+
 }
 
-.card {
-  height: auto;
-  background-color: #f0f0f0;
-  padding: 20px;
+.secao__metodologia__valores__cards{
+
+  background-color: var(--color__subtitulo);
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 15px;
+
+
 }
 
-h2.card-title {
-  font-size: 30px;
-  font-weight: bold;
+.secao__metodologia__valores__cards > h2{
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
   margin-bottom: 10px;
-  text-align: center;
-  overflow: hidden;
+  color: var(--color__texto);
+ 
+
+
 }
 
-p.card-text {
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
+.secao__metodologia__valores__cards > p{
+
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color__texto);
+
 }
 

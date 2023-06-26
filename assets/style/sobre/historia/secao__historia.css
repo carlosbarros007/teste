@@ -7,13 +7,16 @@
     display: flex;
     flex-direction: row;
     align-items:center ;
-
+    background: linear-gradient(135deg, #182dea, #0d1e61);
+    color:white;
+    overflow: hidden;
 }
 
 .secao__sobre__imagem{
     width: 50%;
     justify-content: center;
     text-align: center;
+    
     padding: 60px 0; /* isso e uma ganbiarra para a sombra aparecer, porque se eu colocar a merda de uma margin ou um padding na section esconde a sombra */
    
 }
@@ -22,8 +25,9 @@
 
     width: 85%;
     height: auto;
-    box-shadow: -10px 10px 5px 0px var(--color__sombra__imagem);
+    box-shadow: 0.6875em 0.75em 0.3125em 0 #080640;
     margin-bottom: 30px;
+    border-radius: 10px;
     
 
 }
@@ -41,6 +45,7 @@
 
     overflow: hidden;
     font-size: 20px;
+    color: var(--color__subtitulo);
 
 }
 

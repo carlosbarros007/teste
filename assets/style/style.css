@@ -23,6 +23,11 @@
 
 main{
     overflow-y: hidden;
+
+}
+.contaner__main{
+    background: linear-gradient(135deg, #0d1e61, #182dea, #003399);
+
 }
 a{
     text-decoration: none;
@@ -40,10 +45,11 @@ body{
 
     /* cores */
 
-    --color__texto1: #ffffff;
-    --color__background : #185EA9;
+    --color__texto:#f5f5f5;
+    --color__background :#3852FF;
 
-    --color__subtitulo: #D31D4E;
+    --cor__titulo: #3852FF;
+    --color__subtitulo:#d40505;
     --color__titulo: #ffffff;
     --color__sombra__imagem: #000000bf;
 
